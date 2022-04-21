@@ -33,7 +33,7 @@ class HomeHistoriesTableView: UITableView {
     private func configureUI() {
         separatorStyle = .singleLine
 
-        register(HistoriesTableViewCell.self, forCellReuseIdentifier: HistoriesTableViewCell.reusableIdentifier)
+        register(HomeHistoriesTableViewCell.self, forCellReuseIdentifier: HomeHistoriesTableViewCell.reusableIdentifier)
 
         delegate = self
         dataSource = self
@@ -60,7 +60,7 @@ extension HomeHistoriesTableView: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: HistoriesTableViewCell.reusableIdentifier, for: indexPath) as? HistoriesTableViewCell else { return UITableViewCell() }
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: HomeHistoriesTableViewCell.reusableIdentifier, for: indexPath) as? HomeHistoriesTableViewCell else { return UITableViewCell() }
 
         let history = viewModel.histories[indexPath.section][indexPath.row]
 

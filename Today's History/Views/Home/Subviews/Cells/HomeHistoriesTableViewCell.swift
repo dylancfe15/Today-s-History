@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HistoriesTableViewCell: UITableViewCell {
+class HomeHistoriesTableViewCell: UITableViewCell {
     // MARK: - Views
     
     private lazy var titleLabel: UILabel = {

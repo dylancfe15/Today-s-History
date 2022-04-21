@@ -17,7 +17,7 @@
 		D51485CC280CAE7200AAA695 /* HomeHistoriesTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51485CB280CAE7200AAA695 /* HomeHistoriesTableView.swift */; };
 		D51485CE280CB22400AAA695 /* HistoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51485CD280CB22400AAA695 /* HistoriesViewModel.swift */; };
 		D51485D0280CB24200AAA695 /* HistoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51485CF280CB24200AAA695 /* HistoryResponse.swift */; };
-		D51485D3280CB2D200AAA695 /* HistoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51485D2280CB2D200AAA695 /* HistoriesTableViewCell.swift */; };
+		D51485D3280CB2D200AAA695 /* HomeHistoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51485D2280CB2D200AAA695 /* HomeHistoriesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		D51485CB280CAE7200AAA695 /* HomeHistoriesTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHistoriesTableView.swift; sourceTree = "<group>"; };
 		D51485CD280CB22400AAA695 /* HistoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoriesViewModel.swift; sourceTree = "<group>"; };
 		D51485CF280CB24200AAA695 /* HistoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryResponse.swift; sourceTree = "<group>"; };
-		D51485D2280CB2D200AAA695 /* HistoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoriesTableViewCell.swift; sourceTree = "<group>"; };
+		D51485D2280CB2D200AAA695 /* HomeHistoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHistoriesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +125,7 @@
 		D51485D1280CB2BD00AAA695 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				D51485D2280CB2D200AAA695 /* HistoriesTableViewCell.swift */,
+				D51485D2280CB2D200AAA695 /* HomeHistoriesTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -205,7 +205,7 @@
 				D51485CC280CAE7200AAA695 /* HomeHistoriesTableView.swift in Sources */,
 				D51485D0280CB24200AAA695 /* HistoryResponse.swift in Sources */,
 				D51485B1280CA72E00AAA695 /* AppDelegate.swift in Sources */,
-				D51485D3280CB2D200AAA695 /* HistoriesTableViewCell.swift in Sources */,
+				D51485D3280CB2D200AAA695 /* HomeHistoriesTableViewCell.swift in Sources */,
 				D51485CE280CB22400AAA695 /* HistoriesViewModel.swift in Sources */,
 				D51485B3280CA72E00AAA695 /* SceneDelegate.swift in Sources */,
 				D51485CA280CAA4300AAA695 /* HomeHeaderStackView.swift in Sources */,
