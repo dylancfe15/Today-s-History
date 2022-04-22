@@ -24,23 +24,23 @@ class HistoriesViewModel {
 
         guard let day = components.day, let month = components.month, let url = URL(string: "https://history.muffinlabs.com/date/\(month)/\(day)") else { return }
 
-        URLSession.shared.dataTask(with: url) { data, response, error in
+        URLSession.shared.dataTask(with: url) { [weak self] data, response, error in
             guard let data = data else { return }
 
             do {
                 let response = try JSONDecoder().decode(HistoryResponse.self, from: data)
-                self.histories.removeAll()
+                self?.histories.removeAll()
 
                 if let events = response.data?.Events {
-                    self.histories.append(events)
+                    self?.histories.append(events)
                 }
 
                 if let births = response.data?.Births {
-                    self.histories.append(births)
+                    self?.histories.append(births)
                 }
 
                 if let deaths = response.data?.Deaths {
-                    self.histories.append(deaths)
+                    self?.histories.append(deaths)
                 }
 
                 completion()
