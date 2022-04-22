@@ -74,6 +74,7 @@ extension HomeHistoriesTableView: UITableViewDataSource {
 
 extension HomeHistoriesTableView: UITableViewDelegate {
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        // FIXME: - title shouldn't depend on static indices
         switch section {
         case 0: return "Events"
         case 1: return "Births"
