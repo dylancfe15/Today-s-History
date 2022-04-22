@@ -73,10 +73,6 @@ extension HomeHistoriesTableView: UITableViewDataSource {
 // MARK: - HomeHistoriesTableView+UITableViewDelegate
 
 extension HomeHistoriesTableView: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        UITableView.automaticDimension
-    }
-
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 0: return "Events"
