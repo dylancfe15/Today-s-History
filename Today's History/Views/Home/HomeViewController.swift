@@ -27,8 +27,13 @@ class HomeViewController: UIViewController {
     private lazy var tableView: HomeHistoriesTableView = {
         let tableView = HomeHistoriesTableView()
         tableView.translatesAutoresizingMaskIntoConstraints = false
+        tableView.viewModel = viewModel.historiesViewModel
         return tableView
     }()
+
+    // MARK: - Properties
+
+    private(set) lazy var viewModel = HomeViewModel()
 
     // MARK: - Lifecycle Functions
 
@@ -44,13 +49,22 @@ class HomeViewController: UIViewController {
             stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
 
+        updateDate()
+
         updateHeaderTitle()
     }
 
     // MARK: - Functions
 
     private func updateHeaderTitle() {
-        headerView.setTitle(with: tableView.viewModel.date)
+        headerView.setTitle(with: viewModel.date)
+    }
+
+    fileprivate func updateDate(byAdding days: Int = 0) {
+        viewModel.updateDate(byAdding: -1)
+        viewModel.loadData {
+            self.tableView.reload()
+        }
     }
 }
 
@@ -58,12 +72,14 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: HomeHeaderStackViewDelegate {
     func toPreviousDay() {
-        tableView.loadData(byAdding: -1)
+        updateDate(byAdding: -1)
+
         updateHeaderTitle()
     }
 
     func toNextDay() {
-        tableView.loadData(byAdding: 1)
+        updateDate(byAdding: 1)
+
         updateHeaderTitle()
     }
 }

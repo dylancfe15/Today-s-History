@@ -62,7 +62,11 @@ class HomeHistoriesTableViewCell: UITableViewCell {
         ])
     }
 
-    func configure(with history: HistoryResponse.HistoryData.History) {
+    func configure(with history: HistoryResponse.HistoryData.History?) {
+        guard let history = history else {
+            return
+        }
+
         titleLabel.text = history.year
         descriptionLabel.text = history.text
     }
