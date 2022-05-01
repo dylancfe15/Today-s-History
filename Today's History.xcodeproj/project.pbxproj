@@ -13,11 +13,15 @@
 		D51485BA280CA72F00AAA695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D51485B9280CA72F00AAA695 /* Assets.xcassets */; };
 		D51485BD280CA72F00AAA695 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D51485BB280CA72F00AAA695 /* LaunchScreen.storyboard */; };
 		D51485CA280CAA4300AAA695 /* HomeHeaderStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51485C9280CAA4300AAA695 /* HomeHeaderStackView.swift */; };
-		D51485CE280CB22400AAA695 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51485CD280CB22400AAA695 /* HomeViewModel.swift */; };
 		D51485D0280CB24200AAA695 /* HistoryResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D51485CF280CB24200AAA695 /* HistoryResponse.swift */; };
+		D5B0C49D281DBB1F00840AD5 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B0C49C281DBB1F00840AD5 /* HomeCoordinator.swift */; };
+		D5B0C49F281DBBB800840AD5 /* HomeViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B0C49E281DBBB800840AD5 /* HomeViewCoordinator.swift */; };
+		D5B0C4A1281DC19400840AD5 /* HomeNetworkCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B0C4A0281DC19400840AD5 /* HomeNetworkCoordinator.swift */; };
+		D5B0C4A3281E20A400840AD5 /* MainCoordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B0C4A2281E20A400840AD5 /* MainCoordinators.swift */; };
+		D5B0C4A7281F1F4900840AD5 /* DetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B0C4A6281F1F4900840AD5 /* DetailsCoordinator.swift */; };
+		D5B0C4A9281F211100840AD5 /* DetailsViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B0C4A8281F211100840AD5 /* DetailsViewCoordinator.swift */; };
 		D5F0F2982819F57300C30543 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0F2972819F57300C30543 /* NetworkManager.swift */; };
 		D5F0F29B281A079200C30543 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0F29A281A079200C30543 /* DetailsViewController.swift */; };
-		D5F0F29D281A07BC00C30543 /* DetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0F29C281A07BC00C30543 /* DetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,11 +33,15 @@
 		D51485BC280CA72F00AAA695 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D51485BE280CA72F00AAA695 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D51485C9280CAA4300AAA695 /* HomeHeaderStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderStackView.swift; sourceTree = "<group>"; };
-		D51485CD280CB22400AAA695 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		D51485CF280CB24200AAA695 /* HistoryResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryResponse.swift; sourceTree = "<group>"; };
+		D5B0C49C281DBB1F00840AD5 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		D5B0C49E281DBBB800840AD5 /* HomeViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewCoordinator.swift; sourceTree = "<group>"; };
+		D5B0C4A0281DC19400840AD5 /* HomeNetworkCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNetworkCoordinator.swift; sourceTree = "<group>"; };
+		D5B0C4A2281E20A400840AD5 /* MainCoordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinators.swift; sourceTree = "<group>"; };
+		D5B0C4A6281F1F4900840AD5 /* DetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCoordinator.swift; sourceTree = "<group>"; };
+		D5B0C4A8281F211100840AD5 /* DetailsViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewCoordinator.swift; sourceTree = "<group>"; };
 		D5F0F2972819F57300C30543 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D5F0F29A281A079200C30543 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
-		D5F0F29C281A07BC00C30543 /* DetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +79,7 @@
 				D51485B9280CA72F00AAA695 /* Assets.xcassets */,
 				D51485BB280CA72F00AAA695 /* LaunchScreen.storyboard */,
 				D51485BE280CA72F00AAA695 /* Info.plist */,
+				D5B0C4A5281F1F3300840AD5 /* Coordinators */,
 				D5F0F2962819F56700C30543 /* Managers */,
 				D51485C4280CA75000AAA695 /* Models */,
 				D51485C5280CA77900AAA695 /* Views */,
@@ -98,8 +107,6 @@
 		D51485C6280CA78000AAA695 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				D51485CD280CB22400AAA695 /* HomeViewModel.swift */,
-				D5F0F29C281A07BC00C30543 /* DetailsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -108,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				D51485B4280CA72E00AAA695 /* HomeViewController.swift */,
+				D5B0C49B281DBB1000840AD5 /* Coordinators */,
 				D51485C8280CAA1100AAA695 /* Subviews */,
 			);
 			path = Home;
@@ -119,6 +127,33 @@
 				D51485C9280CAA4300AAA695 /* HomeHeaderStackView.swift */,
 			);
 			path = Subviews;
+			sourceTree = "<group>";
+		};
+		D5B0C49B281DBB1000840AD5 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				D5B0C49C281DBB1F00840AD5 /* HomeCoordinator.swift */,
+				D5B0C49E281DBBB800840AD5 /* HomeViewCoordinator.swift */,
+				D5B0C4A0281DC19400840AD5 /* HomeNetworkCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		D5B0C4A4281F1F1D00840AD5 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				D5B0C4A6281F1F4900840AD5 /* DetailsCoordinator.swift */,
+				D5B0C4A8281F211100840AD5 /* DetailsViewCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		D5B0C4A5281F1F3300840AD5 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				D5B0C4A2281E20A400840AD5 /* MainCoordinators.swift */,
+			);
+			path = Coordinators;
 			sourceTree = "<group>";
 		};
 		D5F0F2952819F3F200C30543 /* Screens */ = {
@@ -142,6 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				D5F0F29A281A079200C30543 /* DetailsViewController.swift */,
+				D5B0C4A4281F1F1D00840AD5 /* Coordinators */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -219,12 +255,16 @@
 				D51485B5280CA72E00AAA695 /* HomeViewController.swift in Sources */,
 				D51485D0280CB24200AAA695 /* HistoryResponse.swift in Sources */,
 				D51485B1280CA72E00AAA695 /* AppDelegate.swift in Sources */,
+				D5B0C4A7281F1F4900840AD5 /* DetailsCoordinator.swift in Sources */,
 				D5F0F29B281A079200C30543 /* DetailsViewController.swift in Sources */,
 				D5F0F2982819F57300C30543 /* NetworkManager.swift in Sources */,
-				D51485CE280CB22400AAA695 /* HomeViewModel.swift in Sources */,
+				D5B0C49F281DBBB800840AD5 /* HomeViewCoordinator.swift in Sources */,
 				D51485B3280CA72E00AAA695 /* SceneDelegate.swift in Sources */,
+				D5B0C4A1281DC19400840AD5 /* HomeNetworkCoordinator.swift in Sources */,
+				D5B0C4A9281F211100840AD5 /* DetailsViewCoordinator.swift in Sources */,
+				D5B0C4A3281E20A400840AD5 /* MainCoordinators.swift in Sources */,
+				D5B0C49D281DBB1F00840AD5 /* HomeCoordinator.swift in Sources */,
 				D51485CA280CAA4300AAA695 /* HomeHeaderStackView.swift in Sources */,
-				D5F0F29D281A07BC00C30543 /* DetailsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
