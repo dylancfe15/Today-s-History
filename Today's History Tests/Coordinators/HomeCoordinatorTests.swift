@@ -25,7 +25,7 @@ class HomeCoordinatorTests: XCTestCase {
         expectation = nil
     }
 
-    func testUpdateDate() {
+    func testUpdateDate_whenAddingZeroDays_dateEqualsToToday() {
         coordinator.updateDate(byAdding: 0)
 
         let dateString = dateFormatter.string(from: coordinator.date)
