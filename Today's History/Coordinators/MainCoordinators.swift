@@ -24,7 +24,7 @@ class MainCoordinator {
     func pushDetails(numberOfEvents: Int) {
         let viewController = DetailsViewController()
         viewController.mainCoordinator = self
-        viewController.coordinator.set(numberOfEvents: numberOfEvents)
+        viewController.numberOfEvents = numberOfEvents
         navigationController.pushViewController(viewController, animated: true)
     }
 

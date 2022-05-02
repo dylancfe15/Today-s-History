@@ -13,6 +13,7 @@ class DetailsViewController: UIViewController {
 
     private(set) lazy var coordinator = DetailsCoordinator(view: self.view)
     var mainCoordinator: MainCoordinator?
+    var numberOfEvents: Int?
 
     // MARK: - Lifecycle
 
@@ -21,5 +22,6 @@ class DetailsViewController: UIViewController {
 
         coordinator.configure()
         coordinator.mainCoordinator = mainCoordinator
+        coordinator.set(numberOfEvents: numberOfEvents ?? 0)
     }
 }
