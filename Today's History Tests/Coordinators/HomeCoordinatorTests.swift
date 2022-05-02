@@ -24,6 +24,8 @@ class HomeCoordinatorTests: XCTestCase {
     }
 
     func testUpdateDate() {
+        coordinator.updateDate(byAdding: 0)
+
         let dateString = dateFormatter.string(from: coordinator.date)
         let expectedDateString = dateFormatter.string(from: Date())
 
@@ -33,6 +35,6 @@ class HomeCoordinatorTests: XCTestCase {
     func testLoadHistories() {
         coordinator.loadHistories()
 
-
+        XCTAssertTrue(coordinator.histories.isEmpty)
     }
 }
