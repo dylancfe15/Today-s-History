@@ -11,12 +11,10 @@ import Today_s_History
 class MockHomeNetworkCoordinator: HomeNetworkCoordinating {
 
     func loadHistories(for date: Date, completion: @escaping ([[HistoryResponse.HistoryData.History]]) -> Void) {
-        let decoder = JSONDecoder()
-
         guard let pathString = Bundle(for: type(of: self)).path(forResource: "Histories", ofType: "json"),
               let jsonString = try? String(contentsOfFile: pathString, encoding: .utf8),
               let data = jsonString.data(using: .utf8),
-              let response = try? decoder.decode(HistoryResponse.self, from: data) else { return }
+              let response = try? JSONDecoder().decode(HistoryResponse.self, from: data) else { return }
 
         var histories: [[HistoryResponse.HistoryData.History]] = []
 
