@@ -43,11 +43,13 @@ class HomeCoordinator {
         }
     }
 
-    func loadHistories() {
+    func loadHistories(completion: (() -> Void)? = nil) {
         networkCoordinator.loadHistories(for: date) { [weak self] histories in
             self?.histories = histories
 
             self?.viewCoordinator.updateViews()
+
+            completion?()
         }
     }
 
