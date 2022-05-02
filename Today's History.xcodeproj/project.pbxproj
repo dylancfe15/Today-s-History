@@ -20,9 +20,23 @@
 		D5B0C4A3281E20A400840AD5 /* MainCoordinators.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B0C4A2281E20A400840AD5 /* MainCoordinators.swift */; };
 		D5B0C4A7281F1F4900840AD5 /* DetailsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B0C4A6281F1F4900840AD5 /* DetailsCoordinator.swift */; };
 		D5B0C4A9281F211100840AD5 /* DetailsViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B0C4A8281F211100840AD5 /* DetailsViewCoordinator.swift */; };
+		D5B0C4BC281F86C200840AD5 /* HomeCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B0C4BB281F86C200840AD5 /* HomeCoordinatorTests.swift */; };
+		D5B0C4BE281F8E6C00840AD5 /* DetailsCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B0C4BD281F8E6C00840AD5 /* DetailsCoordinatorTests.swift */; };
+		D5B0C4C0281F920300840AD5 /* MockHomeNetworkCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5B0C4BF281F920300840AD5 /* MockHomeNetworkCoordinator.swift */; };
+		D5B0C4C4281F930500840AD5 /* Histories.json in Resources */ = {isa = PBXBuildFile; fileRef = D5B0C4C3281F930500840AD5 /* Histories.json */; };
 		D5F0F2982819F57300C30543 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0F2972819F57300C30543 /* NetworkManager.swift */; };
 		D5F0F29B281A079200C30543 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F0F29A281A079200C30543 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D5B0C4B5281F868800840AD5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D51485A5280CA72E00AAA695 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D51485AC280CA72E00AAA695;
+			remoteInfo = "Today's History";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		D51485AD280CA72E00AAA695 /* Today's History.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Today's History.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,12 +54,24 @@
 		D5B0C4A2281E20A400840AD5 /* MainCoordinators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinators.swift; sourceTree = "<group>"; };
 		D5B0C4A6281F1F4900840AD5 /* DetailsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCoordinator.swift; sourceTree = "<group>"; };
 		D5B0C4A8281F211100840AD5 /* DetailsViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewCoordinator.swift; sourceTree = "<group>"; };
+		D5B0C4B1281F868800840AD5 /* Today's History Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Today's History Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5B0C4BB281F86C200840AD5 /* HomeCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinatorTests.swift; sourceTree = "<group>"; };
+		D5B0C4BD281F8E6C00840AD5 /* DetailsCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsCoordinatorTests.swift; sourceTree = "<group>"; };
+		D5B0C4BF281F920300840AD5 /* MockHomeNetworkCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeNetworkCoordinator.swift; sourceTree = "<group>"; };
+		D5B0C4C3281F930500840AD5 /* Histories.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Histories.json; sourceTree = "<group>"; };
 		D5F0F2972819F57300C30543 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		D5F0F29A281A079200C30543 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D51485AA280CA72E00AAA695 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5B0C4AE281F868800840AD5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -59,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				D51485AF280CA72E00AAA695 /* Today's History */,
+				D5B0C4B2281F868800840AD5 /* Today's History Tests */,
 				D51485AE280CA72E00AAA695 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				D51485AD280CA72E00AAA695 /* Today's History.app */,
+				D5B0C4B1281F868800840AD5 /* Today's History Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -83,7 +111,6 @@
 				D5F0F2962819F56700C30543 /* Managers */,
 				D51485C4280CA75000AAA695 /* Models */,
 				D51485C5280CA77900AAA695 /* Views */,
-				D51485C6280CA78000AAA695 /* ViewModels */,
 			);
 			path = "Today's History";
 			sourceTree = "<group>";
@@ -102,13 +129,6 @@
 				D5F0F2952819F3F200C30543 /* Screens */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		D51485C6280CA78000AAA695 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		D51485C7280CA79600AAA695 /* Home */ = {
@@ -154,6 +174,41 @@
 				D5B0C4A2281E20A400840AD5 /* MainCoordinators.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		D5B0C4B2281F868800840AD5 /* Today's History Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D5B0C4C2281F92E800840AD5 /* Data */,
+				D5B0C4C1281F920900840AD5 /* Helpers */,
+				D5B0C4BA281F869E00840AD5 /* Coordinators */,
+			);
+			path = "Today's History Tests";
+			sourceTree = "<group>";
+		};
+		D5B0C4BA281F869E00840AD5 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				D5B0C4BB281F86C200840AD5 /* HomeCoordinatorTests.swift */,
+				D5B0C4BD281F8E6C00840AD5 /* DetailsCoordinatorTests.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		D5B0C4C1281F920900840AD5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				D5B0C4BF281F920300840AD5 /* MockHomeNetworkCoordinator.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D5B0C4C2281F92E800840AD5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D5B0C4C3281F930500840AD5 /* Histories.json */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 		D5F0F2952819F3F200C30543 /* Screens */ = {
@@ -202,6 +257,24 @@
 			productReference = D51485AD280CA72E00AAA695 /* Today's History.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D5B0C4B0281F868800840AD5 /* Today's History Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D5B0C4B7281F868800840AD5 /* Build configuration list for PBXNativeTarget "Today's History Tests" */;
+			buildPhases = (
+				D5B0C4AD281F868800840AD5 /* Sources */,
+				D5B0C4AE281F868800840AD5 /* Frameworks */,
+				D5B0C4AF281F868800840AD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D5B0C4B6281F868800840AD5 /* PBXTargetDependency */,
+			);
+			name = "Today's History Tests";
+			productName = "Today's History Tests";
+			productReference = D5B0C4B1281F868800840AD5 /* Today's History Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -214,6 +287,11 @@
 				TargetAttributes = {
 					D51485AC280CA72E00AAA695 = {
 						CreatedOnToolsVersion = 13.2.1;
+					};
+					D5B0C4B0281F868800840AD5 = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
+						TestTargetID = D51485AC280CA72E00AAA695;
 					};
 				};
 			};
@@ -231,6 +309,7 @@
 			projectRoot = "";
 			targets = (
 				D51485AC280CA72E00AAA695 /* Today's History */,
+				D5B0C4B0281F868800840AD5 /* Today's History Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -242,6 +321,14 @@
 			files = (
 				D51485BD280CA72F00AAA695 /* LaunchScreen.storyboard in Resources */,
 				D51485BA280CA72F00AAA695 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D5B0C4AF281F868800840AD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5B0C4C4281F930500840AD5 /* Histories.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +355,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D5B0C4AD281F868800840AD5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5B0C4BC281F86C200840AD5 /* HomeCoordinatorTests.swift in Sources */,
+				D5B0C4C0281F920300840AD5 /* MockHomeNetworkCoordinator.swift in Sources */,
+				D5B0C4BE281F8E6C00840AD5 /* DetailsCoordinatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D5B0C4B6281F868800840AD5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D51485AC280CA72E00AAA695 /* Today's History */;
+			targetProxy = D5B0C4B5281F868800840AD5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D51485BB280CA72F00AAA695 /* LaunchScreen.storyboard */ = {
@@ -452,6 +557,55 @@
 			};
 			name = Release;
 		};
+		D5B0C4B8281F868800840AD5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V6L8824G93;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Dylan-Chen.Today-s-History-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Today's History.app/Today's History";
+			};
+			name = Debug;
+		};
+		D5B0C4B9281F868800840AD5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = V6L8824G93;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Dylan-Chen.Today-s-History-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Today's History.app/Today's History";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -469,6 +623,15 @@
 			buildConfigurations = (
 				D51485C2280CA72F00AAA695 /* Debug */,
 				D51485C3280CA72F00AAA695 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D5B0C4B7281F868800840AD5 /* Build configuration list for PBXNativeTarget "Today's History Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D5B0C4B8281F868800840AD5 /* Debug */,
+				D5B0C4B9281F868800840AD5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -19,7 +19,7 @@ class HomeCoordinator {
     private(set) var histories: [[HistoryResponse.HistoryData.History]] = []
 
     let viewCoordinator: HomeViewCoordiantor
-    let networkCoordinator = HomeNetworkCoordinator()
+    var networkCoordinator: HomeNetworkCoordinating = HomeNetworkCoordinator()
     var mainCoordinator: MainCoordinator?
 
     // MARK: - Initializers

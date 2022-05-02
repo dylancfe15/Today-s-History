@@ -7,17 +7,17 @@
 
 import Foundation
 
-struct HistoryResponse: Decodable {
-    struct HistoryData: Decodable {
-        struct History: Decodable {
+public struct HistoryResponse: Decodable {
+    public struct HistoryData: Decodable {
+        public struct History: Decodable {
             let year: String?
             let text: String?
         }
 
-        let Events: [History]?
-        let Births: [History]?
-        let Deaths: [History]?
+        public let Events: [History]?
+        public let Births: [History]?
+        public let Deaths: [History]?
     }
 
-    let data: HistoryData?
+    public let data: HistoryData?
 }

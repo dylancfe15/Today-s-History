@@ -7,7 +7,11 @@
 
 import Foundation
 
-class HomeNetworkCoordinator {
+public protocol HomeNetworkCoordinating {
+    func loadHistories(for date: Date, completion: @escaping(_ histories: [[HistoryResponse.HistoryData.History]]) -> Void)
+}
+
+class HomeNetworkCoordinator: HomeNetworkCoordinating {
 
     var networkManager = NetworkManager()
 
