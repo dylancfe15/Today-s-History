@@ -11,8 +11,7 @@ import XCTest
 class HomeCoordinatorTests: XCTestCase {
 
     private var coordinator: HomeCoordinator! = nil
-    private var expectation: XCTestExpectation!
-    let dateFormatter = DateFormatter()
+    private let dateFormatter = DateFormatter()
 
     override func setUpWithError() throws {
         coordinator = HomeCoordinator(view: UIView())
@@ -22,7 +21,6 @@ class HomeCoordinatorTests: XCTestCase {
 
     override func tearDownWithError() throws {
         coordinator = nil
-        expectation = nil
     }
 
     func testUpdateDate_whenAddingZeroDays_dateEqualsToToday() {
