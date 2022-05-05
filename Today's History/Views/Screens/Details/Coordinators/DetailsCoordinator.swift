@@ -22,7 +22,7 @@ class DetailsCoordinator {
 
     // MARK: - Initializers
 
-    init(view: UIView) {
+    init(view: UIView = UIView()) {
         viewCoordinator = DetailsViewCoordinator(view: view)
     }
 
